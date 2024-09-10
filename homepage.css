@@ -128,6 +128,42 @@
     font-size: 2vh;
 }
 
+.why-study
+{
+    width: 100%;
+    margin-top: 10vh;
+    height: 80vh;
+}
+
+.why
+{
+    text-align: center;
+    font-size: 7vh;
+    margin: auto;
+    margin-bottom: 6vh;
+    border-bottom: 2px solid gray;
+}
+
+.reasons
+{
+    display: grid;
+    grid-template-columns: 22vw 22vw 22vw;
+    grid-template-rows: 27.5vh 27.5vh;
+    /* flex-wrap: wrap; */
+    width: 70vw;
+    height: 55vh;
+    margin: auto;
+    column-gap: 2vw;
+    row-gap: 4vw;
+}
+
+.reasons div h4
+{
+    font-size: 2vh;
+    color: rgb(240, 47, 47);
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 700px) {
     .introduction {
         font-size: 4vh;
@@ -190,4 +226,39 @@
         width: 15vw;
         height: 10vw;
     }
+}
+
+@media only screen and (max-width: 1185px)
+{
+    .why-study
+    {
+        height: 100vh;
+    }
+    .reasons
+    {
+        /* border: 2px solid black; */
+        /* margin-left: 10vw; */
+        /* margin-right: 10vw; */
+        width: 90vw;
+        /* display: grid; */
+        /* grid-template-columns: 40vw 40vw; */
+        display: flex;
+        flex-direction: column;
+    
+        column-gap: 3vw;
+    }
+
+    .reasons div
+    {
+        /* border: 2px solid black; */
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+        .why-study
+        {
+            height: 120vh;
+        }
 }
