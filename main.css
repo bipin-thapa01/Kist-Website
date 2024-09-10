@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Itim", cursive;
 }
 
 :root
@@ -27,16 +29,38 @@ nav
     margin-right: 3rem;
     border-radius: 3.7rem;
     background-color: #EDEDED;
+    
+}
+
+.main-nav
+{
+    position: relative;
 }
 
 .main-nav ul li
 {
     list-style-type: none;
+    font-size: 4rem;
 }
 
 .main-nav ul li a
 {
     text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+#h:hover, #a:hover, #p:hover
+{
+    color: white;
+    background-color: rgb(95, 95, 95);
+    border-radius: 3.7rem;
+    padding: 1rem;
+} 
+
+.logo
+{
+    margin-left: 1rem;
 }
 
 .logo img
@@ -44,4 +68,15 @@ nav
     width: 9.2rem;
     height: 8.7rem;
     border-radius: 3.7rem;
+}
+
+.main-nav
+{
+    width: 110rem;
+}
+
+.main-nav ul
+{
+    display: flex;
+    justify-content: space-between;
 }
