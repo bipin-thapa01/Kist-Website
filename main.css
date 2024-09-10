@@ -1,75 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Itim", cursive;
 }
 
-:root
-{
+:root {
     font-size: 62.5%;
 }
 
-body,html
-{
+body,
+html {
     font-size: 1.6rem;
 }
 
-nav
-{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 9.8rem;
-    background-color: #EDEDED;
+    background-color: hsl(188, 98%, 84%);
     border: none;
 }
 
-.main-nav li
-{
+.main-nav li {
     list-style-type: none;
     font-size: 4rem;
 }
 
-.main-nav li a
-{
+.main-nav li a {
     text-decoration: none;
     color: black;
     padding: 1rem;
 }
 
-#h:hover, #a:hover, #p:hover
-{
+#h:hover,
+#a:hover,
+#p:hover {
     color: white;
-    background-color: rgb(95, 95, 95);
+    background-color: rgb(37, 112, 149);
     border-radius: 3.7rem;
     padding: 1rem;
     transform: scale(1.2);
-} 
+}
 
-.logo
-{
+.logo {
     margin-left: 1rem;
 }
 
-.logo img
-{
+.logo img {
     width: 9.2rem;
     height: 8.7rem;
     border-radius: 3.7rem;
 }
 
-.logo img:hover
-{
+.logo img:hover {
     scale: 1.1;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.main-nav
-{
+.main-nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -79,38 +71,38 @@ nav
     height: 9rem;
 }
 
-.mobile-button
-{
+.mobile-button {
     display: none;
 }
 
-.mobile-button button
-{
+.mobile-button button {
     height: 6rem;
     width: 6rem;
     font-size: 3rem;
     border: none;
+    background-color: rgb(37, 112, 149);
+    background-color: ;
 }
 
-.mobile-button button:hover
-{
-    scale: 1.1;
+.mobile-button button:hover {
+    scale: 1;
+    margin-right: 10px;
     border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
 
 
-@media  only screen and (max-width: 960px) {
-    .mobile-button
-    {
+@media only screen and (max-width: 960px) {
+
+    .mobile-button {
         display: block;
     }
-    .main-nav
-    {
+
+    .main-nav {
         position: absolute;
         border: 2 px solid;
-        top: 8.5rem;
-        right: 10vw;
+        top: 4.5rem;
+        right: 20vw;
         left: 20vw;
         display: flex;
         height: 50vh;
@@ -121,4 +113,18 @@ nav
         transition: all 1s;
     }
 
+    .main-nav ul
+    {
+        font-size: 2vh;
+    }
+
+    nav {
+        height: 6rem;
+    }
+
+    .logo img {
+        width: 5.6rem;
+        height: 5.6rem;
+        border-radius: 3.7rem;
+    }
 }

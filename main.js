@@ -1,13 +1,44 @@
 let menuList = document.getElementById("menuList");
 menuList.style.maxHeight = "0px";
 
-function toggleMenu(){
-    if(menuList.style.maxHeight == "0px")
-    {
+function toggleMenu() {
+    if (menuList.style.maxHeight == "0px") {
         menuList.style.maxHeight = "300px";
-        
+
     }
-    else{
+    else {
         menuList.style.maxHeight = "0px";
     }
+}
+
+const slides = document.querySelectorAll(".slide")
+var counter = 0;
+slides.forEach(
+    (slide, index) => {
+        slide.style.left = `${index * 100}%`
+    }
+)
+
+const goPrev = () => {
+    counter--
+    if (counter < 0) {
+        counter++
+    }
+    slideImage()
+
+}
+
+const goNext = () => {
+    if (counter < slides.length - 1) {
+        counter++;
+        slideImage();
+    }
+}
+
+const slideImage = () => {
+    slides.forEach(
+        (slide) => {
+            slide.style.transform = `translateX(-${counter * 100}%)`
+        }
+    )
 }
