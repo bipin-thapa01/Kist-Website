@@ -1,0 +1,47 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root
+{
+    font-size: 62.5%;
+}
+
+body,html
+{
+    font-size: 1.6rem;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: .2rem solid;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-radius: 3.7rem;
+    background-color: #EDEDED;
+}
+
+.main-nav ul li
+{
+    list-style-type: none;
+}
+
+.main-nav ul li a
+{
+    text-decoration: none;
+}
+
+.logo img
+{
+    width: 9.2rem;
+    height: 8.7rem;
+    border-radius: 3.7rem;
+}
