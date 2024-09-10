@@ -23,27 +23,18 @@ nav
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: .2rem solid;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    border-radius: 3.7rem;
+    height: 9.8rem;
     background-color: #EDEDED;
-    
+    border: none;
 }
 
-.main-nav
-{
-    position: relative;
-}
-
-.main-nav ul li
+.main-nav li
 {
     list-style-type: none;
     font-size: 4rem;
 }
 
-.main-nav ul li a
+.main-nav li a
 {
     text-decoration: none;
     color: black;
@@ -56,6 +47,7 @@ nav
     background-color: rgb(95, 95, 95);
     border-radius: 3.7rem;
     padding: 1rem;
+    transform: scale(1.2);
 } 
 
 .logo
@@ -70,13 +62,63 @@ nav
     border-radius: 3.7rem;
 }
 
-.main-nav
+.logo img:hover
 {
-    width: 110rem;
+    scale: 1.1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.main-nav ul
+.main-nav
 {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 13px;
+    width: 60vw;
+    height: 9rem;
+}
+
+.mobile-button
+{
+    display: none;
+}
+
+.mobile-button button
+{
+    height: 6rem;
+    width: 6rem;
+    font-size: 3rem;
+    border: none;
+}
+
+.mobile-button button:hover
+{
+    scale: 1.1;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+@media  only screen and (max-width: 960px) {
+    .mobile-button
+    {
+        display: block;
+    }
+    .main-nav
+    {
+        position: absolute;
+        border: 2 px solid;
+        top: 8.5rem;
+        right: 10vw;
+        left: 20vw;
+        display: flex;
+        height: 50vh;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: #EDEDED;
+        z-index: 999;
+        transition: all 1s;
+    }
+
 }
