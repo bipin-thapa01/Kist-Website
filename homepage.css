@@ -132,7 +132,6 @@
 {
     width: 100%;
     margin-top: 10vh;
-    height: 80vh;
 }
 
 .why
@@ -150,8 +149,7 @@
     grid-template-columns: 22vw 22vw 22vw;
     grid-template-rows: 27.5vh 27.5vh;
     /* flex-wrap: wrap; */
-    width: 70vw;
-    height: 55vh;
+    width: 80vw;
     margin: auto;
     column-gap: 2vw;
     row-gap: 4vw;
@@ -162,6 +160,11 @@
     font-size: 2vh;
     color: rgb(240, 47, 47);
     margin-bottom: 10px;
+}
+
+.reasons div p
+{
+    font-size: 2vh;
 }
 
 @media only screen and (max-width: 700px) {
@@ -232,7 +235,7 @@
 {
     .why-study
     {
-        height: 100vh;
+        height: 110vh;
     }
     .reasons
     {
@@ -244,7 +247,6 @@
         /* grid-template-columns: 40vw 40vw; */
         display: flex;
         flex-direction: column;
-    
         column-gap: 3vw;
     }
 
@@ -255,10 +257,75 @@
     }
 }
 
-@media only screen and (max-width: 400px)
+@media only screen and (max-width: 395px)
 {
-        .why-study
-        {
-            height: 120vh;
-        }
+    .why-study
+    {
+        height: 130vh;
+    }
 }
+
+@media only screen and (max-height: 600px)
+{
+    .reasons
+    {
+        overflow: scroll;
+    }
+}
+/* 
+@-webkit-keyframes slide_animation
+{
+    0%
+    {
+        left: 0px;
+    }
+    10%
+    {
+        left: 0px;
+    }
+    20%
+    {
+        left: 60vw;
+    }
+    30%
+    {
+        left: 60vw;
+    }
+    40%
+    {
+        left: 120vw;
+    }
+    50%
+    {
+        left: 120vw;
+    }
+    60%
+    {
+        left: 60vw;
+    }
+    70%
+    {
+        left: 60vw;
+    }
+    80%
+    {
+        left: 0;
+    }
+    90%
+    {
+        left: 0;
+    }
+    100%
+    {
+        left: 0;
+    }
+}
+
+.image-slider
+{
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+} */

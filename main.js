@@ -42,3 +42,15 @@ const slideImage = () => {
         }
     )
 }
+
+// function show()
+// {
+//     var divs = document.getElementsByClassName("dropdown1");
+
+// if (divs.length > 0) {
+//     var firstDiv = divs[0];
+    
+//     firstDiv.style.display = "block";
+// }
+
+// }
